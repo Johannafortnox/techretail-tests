@@ -123,3 +123,15 @@ def test_fri_frakt_precis_vid_500():
     # Assert 
 
     assert frakt == 0.0
+
+
+def test_halvt_ore_avrundas_uppat():
+    # Arrange
+    pris = 0.15
+    rabatt = 50
+
+    # Act
+    resultat = apply_discount(pris, rabatt)
+
+    # Assert
+    assert resultat == 0.08

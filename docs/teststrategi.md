@@ -1,3 +1,6 @@
+Johanna Söderström 2026-11-01
+
+
 # Teststrategi för TechRetail AB
 
 > Den här filen är en del av inlämningen. Du fyller på den under kursen – börja i lektion 1 och skriv klart i lektion 9.
@@ -9,6 +12,23 @@
 ## 1. Nuläge och mognad
 
 *Hur testar TechRetail AB i dag? Var ligger företaget i kursens mognadsmodell (Strategi och styrning, Verktyg och arkitektur, Kompetens och organisation, Process och CI/CD, Mätning och resultat), och vilken nivå siktar ni på?*
+| Dimension | Nivå | Bevis och motivering | 
+
+|---|---|---| 
+
+| Strategi och styrning | | | 1, 2, Ingen gemensam teststrategi, personberoende. (9, Karins svit) 
+
+| Verktyg och arkitektur | | | 4, 8, 9, Saknas gemensam teststrategi och verktyg. (3, tidigare försök) 
+
+| Kompetens och organisation | | | 1, 3, 6, 7, 8, finns viss kompetens 
+
+| Process och CI/CD | 1 | Inga tester körs när koden ändras. Regressionen görs för hand | 
+
+| Mätning och resultat | | | 7, 8, 9: ingen följer upp resultat, finns krav från ledningen som vi inte vet om det följs upp, vet bara att Karins svit hittar fel 
+
+ 
+
+Målnivå: 3. Störst kulturell risk: Den kulturfaktor som hotar mest och vårt förslag: _Tid och förväntningar__ Konkret förslag: Avsätt lite tid (med utvecklarna) i varje spring för att utveckla automation.
 
 ## 2. Vad automatiseras och vad inte
 
@@ -16,7 +36,16 @@
 
 | Testfall | Klass (ersätts / kompletteras / behålls manuellt) | Nivå | Motivering |
 |---|---|---|---|
-| MT-01 | | | |
+| MT-01 |3, 3, 3, 3, 3, 3 = 18 | | |
+MT-03 3, 3, 3, 3, 3, 3 = 18 Nu 
+MT-06 3, 3, 2, 1, 2, 3 = 14 Senare 
+MT-08 3, 3, 3, 3, 3, 3 = 18
+MT-11 3, 3, 3, 3, 3, 3 = 18 
+MT-13 3, 3, 3, 1, 3, 3 = 16 
+MT-14 3, 3 Köpflöde automatiseras, känslan testas manuellt 
+MT-19 
+MT-20 3
+MT-22 
 
 ## 3. Testnivåer och verktyg
 
