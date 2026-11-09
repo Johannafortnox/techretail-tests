@@ -47,9 +47,41 @@ MT-19
 MT-20 3
 MT-22 
 
-## 3. Testnivåer och verktyg
+## 3. Testnivåer och verkty
+
+MT-01 
+GUI + API 
+Verifiera kundnamn och ”Mina ordrar” i GUI. API kan man testa inloggning: användarnamn + lösenord. 
+
+MT-04 
+GUI + API 
+Verifiera att skruvdragaren visas på hemsidan efter sökning fyllts i sökfältet. 
+
+MT-08 
+GUI 
+Används ingen sökning utan sköts genom att manuellt trycka på hemsidan. 
+
+MT-11 
+API + Komponent 
+Direktreglering sköts av komponent, kundvagnen kontrolleras av API. 
+
+MT-13 
+Komponent 
+Direktreglering sköts av komponent 
+
+MT-25 
+GUI + API 
+Produkt slut visas i GUI, API att det inte går att lägga till i kundvagn. 
+
+Verktyg för GUI-tester: Playwright. Det avgörande kriteriet var väntan och stabilitet: Playwright väntar automatiskt på element, medan Selenium kräver egna väntningar. Felsökning vägde också tungt. Behöver vi stöd för fler webbläsare skulle vi välja Selenium.
+
+Fall som testas i webbläsaren: MT-01 (inloggning), MT-04 (sökning), MT-08 (lägg i kundvagn) och MT-25 (slutsåld produkt), flera av dem kompletterade med API-tester. MT-11 och MT-13 testas på lägre nivå, eftersom reglerna sköts i komponenten.
+
+Kvar för Karin: Test på riktig mobil, eftersom Playwright bara emulerar mobila enheter.
+
 
 *Hur fördelar du testerna på testpyramidens nivåer komponent (enhet), API och GUI? Ge exempel ur ditt eget repo för varje nivå. Vilka verktyg använder du, och vad körs vid varje push respektive nattligt?*
+
 
 ## 4. AI-användning
 

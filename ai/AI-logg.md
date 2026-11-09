@@ -36,15 +36,25 @@ Tumregel: lägg mer tid på att granska än på att generera.
 
 ### 2026-11-01 · Lektion 1 · Verktyg: Copilot Free
 
-| **Bad** | Vad bad du om? Klistra in prompten. |Föreslå ett pytest-test för apply_discount i src/techretail/pricing.py som prövar ett gränsvärde jag inte redan har. Följ AAA. Ändra inga filer.
-| **Fick** | Vad gav AI:n dig? Kort sammanfattning eller länk till commit. |Ett nytt gränsvärde är exakt en halv öre: 0,15 kr med 50 % rabatt ger 0,075 kr, som enligt reglerna ska avrundas uppåt till 0,08 kr i pricing.py.
-| **Kör** | Gick koden att köra? Vad blev resultatet? Den passerades och blev grönt|tests/unit/test_pricing.py::test_halvt_ore_avrundas_uppat PASSED.
-| **Bryt** | Ändrade du koden eller appen så att testet borde bli rött? Blev det rött av rätt anledning? | Jag ändrade förväntat värde från 0.08 till 0.07. Testet blev rött eftersom koden gav 0.08, alltså av rätt anledning.
-| **Data** | Skickade du någon persondata eller hemlighet? (Svaret ska vara nej.) |Nej, jag skickade bara kod från repot.
-| **Kostnad** | Ungefär hur många tokens, hur lång tid, vilken kostnad? | En prompt, cirka 10 minuter, gratis med Copilot Free.
-| **Beslut** | Accepterade, ändrade eller kastade du resultatet – och varför? |Accepterade testet. Jag kontrollerade i pricing.py att halva ören ska avrundas uppåt.
+| **Bad** |Föreslå ett pytest-test för apply_discount i src/techretail/pricing.py som prövar ett gränsvärde jag inte redan har. Följ AAA. Ändra inga filer.
+| **Fick** |Ett nytt gränsvärde är exakt en halv öre: 0,15 kr med 50 % rabatt ger 0,075 kr, som enligt reglerna ska avrundas uppåt till 0,08 kr i pricing.py.
+| **Kör** |  Den passerades och blev grönt|tests/unit/test_pricing.py::test_halvt_ore_avrundas_uppat PASSED.
+| **Bryt** | Jag ändrade förväntat värde från 0.08 till 0.07. Testet blev rött eftersom koden gav 0.08, alltså av rätt anledning.
+| **Data** |Nej, jag skickade bara kod från repot.
+| **Kostnad** | En prompt, cirka 10 minuter, gratis med Copilot Free.
+| **Beslut** |Accepterade testet. Jag kontrollerade i pricing.py att halva ören ska avrundas uppåt.
 
 ---
+
+### 2026-11-08 · Lektion 2 · Verktyg: Claude
+
+- **Bad:** Hjälp att förstå labbstegen och felsöka fel, till exempel IndentationError, var test-results låg och hur jag öppnar trace.zip. Även hjälp att formulera teststrategin utifrån gruppens anteckningar.
+- **Fick:** Hjälp att förstå steg för steg, bättre för mig att hålla ordning på vad som skulle göras
+- **Kör:** Ja, 6 passed på GUI-testerna och 6 passed på milstolpen L=2.
+- **Bryt:** Jag ändrade 18 V till 12 V i test 1. Testet blev rött och tracen visade att sidan visade 18 V, alltså av rätt anledning.
+- **Data:** Nej, inga personuppgifter
+- **Kostnad:** Ca 20 min, ingen extra kostnad
+- **Beslut:**
 
 ## Summering (fylls i före inlämningen)
 
