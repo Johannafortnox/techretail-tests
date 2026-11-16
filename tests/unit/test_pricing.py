@@ -9,6 +9,7 @@ import pytest
 from techretail.pricing import apply_discount, shipping_cost
 
 
+@pytest.mark.smoke
 def test_exempel_10_procent_rabatt_drar_av_en_tiondel():
     # Arrange
     pris = 200
@@ -110,6 +111,7 @@ def test_frakt_49_kr_strax_under_500():
     assert frakt == 49 
 
 
+@pytest.mark.smoke 
 def test_fri_frakt_precis_vid_500(): 
 
     # Arrange 
